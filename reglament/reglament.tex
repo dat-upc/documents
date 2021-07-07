@@ -28,6 +28,11 @@
 \renewcommand*{\cftsubsubsecaftersnum}{.}
 \setlength\cftsubsubsecnumwidth{5em}
 
+% Canviar l'espaiat entre capítols de l'índex
+\renewcommand\cftsecafterpnum{\vskip2.5pt}
+\renewcommand\cftsubsecafterpnum{\vskip1.5pt}
+\renewcommand\cftsubsubsecafterpnum{\vskip1.5pt}
+
 % Canviar el nom de les seccions, subseccions, etc.
 \usepackage{titlesec}
 \renewcommand*{\thesection}{\Roman{section}}
@@ -268,7 +273,7 @@ El mandat és el que designa el Reglament d’organització i funcionament de l'
 \end{enumerate}
 
 
-\subsection{Els sotdelegats de centre}
+\subsection{Els sotsdelegats de centre}
 \subsubsection{Nomenament i cessament}
 \subsubsection{Funcions}
 
