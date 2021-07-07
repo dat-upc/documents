@@ -5,6 +5,8 @@
 \usepackage{graphicx}
 \usepackage[shortlabels]{enumitem}
 \usepackage[hidelinks]{hyperref}
+\usepackage[margin=3cm]{geometry}
+\usepackage{microtype}
 
 % Canviar la font del document
 \usepackage{fontspec}
@@ -17,23 +19,26 @@
 % Canviar el prefix de l'índex
 \usepackage{tocloft}
 \renewcommand*{\cftsecpresnum}{Capítol }
+\renewcommand*{\cftsecaftersnum}{.}
 \setlength\cftsecnumwidth{5.5em}
 \renewcommand*{\cftsubsecpresnum}{Secció }
+\renewcommand*{\cftsubsecaftersnum}{.}
 \setlength\cftsubsecnumwidth{4em}
 \renewcommand*{\cftsubsubsecpresnum}{Article }
+\renewcommand*{\cftsubsubsecaftersnum}{.}
 \setlength\cftsubsubsecnumwidth{5em}
 
 % Canviar el nom de les seccions, subseccions, etc.
 \usepackage{titlesec}
-\renewcommand*{\thesection}{\Roman{section}.}
-\renewcommand*{\thesubsection}{\arabic{subsection}.}
-\renewcommand*{\thesubsubsection}{\arabic{subsubsection}.}
+\renewcommand*{\thesection}{\Roman{section}}
+\renewcommand*{\thesubsection}{\arabic{subsection}}
+\renewcommand*{\thesubsubsection}{\arabic{subsubsection}}
 \titleformat{\section}[block]
-{\normalfont\Large\bfseries}{Capítol~\thesection}{1em}{}
+{\normalfont\Large\bfseries}{Capítol~\thesection.}{1em}{}
 \titleformat{\subsection}
-{\normalfont\large\bfseries}{Secció~\thesubsection}{1em}{}
+{\normalfont\large\bfseries}{Secció~\thesubsection.}{1em}{}
 \titleformat{\subsubsection}
-{\normalfont\normalsize\bfseries}{Article~\thesubsubsection}{1em}{}
+{\normalfont\normalsize\bfseries}{Article~\thesubsubsection.}{1em}{}
 
 % Títol del document
 \title{Reglament de la Delegació d'Alumnes de Telecomunicacions}
@@ -43,7 +48,7 @@
 % Portada
 \thispagestyle{empty}
 \begin{center}
-\includegraphics{Dat_logo_10x6.png}
+\includegraphics[scale=0.8]{Dat_logo_10x6.png}
 \vspace{3em}
 
 \Huge
@@ -62,54 +67,54 @@
 
 \section{Disposicions generals}
 \subsubsection{Naturalesa}
-D’acord amb l’Article 98.1 dels Estatuts de la UPC, la Delegació d’Estudiants és l’òrgan de coordinació dels representants dels estudiants de grau i màster universitari dins l’àmbit de cada centre docent.
+D'acord amb l'Article 98.1 dels Estatuts de la UPC, la Delegació d'Estudiants és l'òrgan de coordinació dels representants dels estudiants de grau i màster universitari dins l'àmbit de cada centre docent.
 
-Aquest òrgan es defineix com la Delegació d’Alumnes de Telecomunicacions. A partir d’aquest moment es definirà i s’anomenarà DAT o Delegació en aquest document, així com en la seva identitat física i digital.
+Aquest òrgan es defineix com la Delegació d'Alumnes de Telecomunicacions. A partir d'aquest moment es definirà i s'anomenarà DAT o Delegació en aquest document, així com en la seva identitat física i digital.
 
 \subsubsection{Composició i mandat}
-La composició de la Delegació d’estudiants és la que s’estableix a l'article 35 del Reglament d’organització i funcionament de l’ETSETB. A més a més, formaran part de la Delegació els claustrals que són estudiants de l’Escola.
+La composició de la Delegació d'estudiants és la que s'estableix a l'Article 35 del Reglament d'organització i funcionament de l'ETSETB. A més a més, formaran part de la Delegació els claustrals que són estudiants de l'Escola.
 
-\subsubsection{Funcions}
-La Delegació d’estudiants té les funcions que li atorguen els Estatuts de la UPC, les Directrius per a l’elaboració dels Reglaments d’organització i funcionament dels centres docents, i el Reglament d’organització i funcionament de l’ETSETB.
+\subsubsection{Funcions}\label{art:funcions}
+La Delegació d'estudiants té les funcions que li atorguen els Estatuts de la UPC, les Directrius per a l'elaboració dels Reglaments d'organització i funcionament dels centres docents, i el Reglament d'organització i funcionament de l'ETSETB.
 
-La Delegació d’estudiants també té les següents funcions:
+La Delegació d'estudiants també té les següents funcions:
 \begin{enumerate}[a)]
-	\item Elaborar anualment les línies estratègiques i objectius de la Delegació d’estudiants.
+	\item Elaborar anualment les línies estratègiques i objectius de la Delegació d'estudiants.
 	\item Gestionar i fer la liquidació del pressupost que té assignat la Delegació.
-	\item Informar als estudiants de grau i màster sobre la tasca que duu a terme la Delegació, així com d’altres aspectes que puguin ser d’interès pels estudiants.
-	\item Potenciar i canalitzar la participació dels estudiants en els òrgans de govern de la Universitat i de l’Escola.
-	\item Contribuir a l’assessorament dels estudiants de l’Escola i vetllar pels seus drets.
+	\item Informar als estudiants de grau i màster sobre la tasca que duu a terme la Delegació, així com d'altres aspectes que puguin ser d'interès pels estudiants.
+	\item Potenciar i canalitzar la participació dels estudiants en els òrgans de govern de la Universitat i de l'Escola.
+	\item Contribuir a l'assessorament dels estudiants de l'Escola i vetllar pels seus drets.
 \end{enumerate}
 
 \section{Drets i deures}
 \subsubsection{Drets dels membres de la delegació}
-A més dels drets que es reconeixen al Reial Decret 1791/2010, de 30 de desembre, pel qual s’aprova l’Estatut de l’estudiant universitari, als Estatuts de la UPC i la resta de normativa que sigui d’aplicació els membres de la delegació tenen els següents drets:
+A més dels drets que es reconeixen al Reial Decret 1791/2010, de 30 de desembre, pel qual s'aprova l'Estatut de l'estudiant universitari, als Estatuts de la UPC i la resta de normativa que sigui d'aplicació els membres de la delegació tenen els següents drets:
 
 \begin{enumerate}[a)]
-	\item Expressar amb llibertat les manifestacions que realitzin en l’exercici de les seves funcions.
+	\item Expressar amb llibertat les manifestacions que realitzin en l'exercici de les seves funcions.
 	\item Participar a les sessions dels òrgans als quals es pertanyi amb veu i vot.
-	\item Ser elector i elegible per a càrrecs de gestió i representació de la Delegació d’estudiants o per formar part de les seves comissions, si escau.
-	\item Accedir a les instal·lacions, materials i documents de la Delegació en els termes que s’estableixin
+	\item Ser elector i elegible per a càrrecs de gestió i representació de la Delegació d'estudiants o per formar part de les seves comissions, si escau.
+	\item Accedir a les instal·lacions, materials i documents de la Delegació en els termes que s'estableixin
 	\item No ser perjudicat per exercir la representació dels estudiants.
-	\item Fer ús de la paraula i intervenir d’acord amb els deures de convivència.
+	\item Fer ús de la paraula i intervenir d'acord amb els deures de convivència.
 \end{enumerate}
 
 \subsubsection{Deures dels membres de la delegació}
-A més dels deures que es detallen al Reial Decret 1791/2010, de 30 de desembre, pel qual s’aprova l’Estatut de l’estudiant universitari, als Estatuts de la UPC i la resta de normativa que sigui d’aplicació els membres de la delegació tenen els següents deures:
+A més dels deures que es detallen al Reial Decret 1791/2010, de 30 de desembre, pel qual s'aprova l'Estatut de l'estudiant universitari, als Estatuts de la UPC i la resta de normativa que sigui d'aplicació els membres de la delegació tenen els següents deures:
 
 \begin{enumerate}[a)]
-	\item Complir amb aquest Reglament i els acords que s’adoptin.
-	\item Assistir a les sessions del Ple i als actes que requereixen la seva presència, així com a la resta d’òrgans als quals es pertanyi.
+	\item Complir amb aquest Reglament i els acords que s'adoptin.
+	\item Assistir a les sessions del Ple i als actes que requereixen la seva presència, així com a la resta d'òrgans als quals es pertanyi.
 	\item Transmetre les opinions i peticions col·lectives dels seus representats.
-	\item Informar als seus representats de les activitats realitzades en l’exercici del seu càrrec.
-	\item Fer un bon ús dels espais, materials, documentació i la resta de mitjans necessaris per a l’exercici de les seves funcions o drets.
+	\item Informar als seus representats de les activitats realitzades en l'exercici del seu càrrec.
+	\item Fer un bon ús dels espais, materials, documentació i la resta de mitjans necessaris per a l'exercici de les seves funcions o drets.
 	\item Respectar les decisions dels òrgans de la Delegació i no fer pública informació confidencial de la Delegació.
 \end{enumerate}
 
 \section{Òrgans col·legiats i unipersonals}
 \subsection{Disposicions generals}
 \subsubsection{Òrgans col·legiats}
-Els òrgans col·legiats de la Delegació d’estudiants són:
+Els òrgans col·legiats de la Delegació d'estudiants són:
 \begin{enumerate}[a)]
 	\item El Ple.
 	\item El Consell de la Delegació.
@@ -125,34 +130,175 @@ Els òrgans unipersonals de la Delegació són:
 \end{enumerate}
 
 \subsubsection{Disposicions generals sobre els òrgans col·legiats}
-\begin{enumerate}[\thesubsubsection1]
-	\item L’assistència a les sessions dels òrgans col·legiats té caràcter personal i el vot és intransferible.
-	\item La manca d’assistència no excusada a dues sessions consecutives de l’òrgan n’implica el cessament com a membre.
+\begin{enumerate}[\thesubsubsection.1]
+	\item L'assistència a les sessions dels òrgans col·legiats té caràcter personal i el vot és intransferible.
+	\item La manca d'assistència no excusada a dues sessions consecutives de l'òrgan n'implica el cessament com a membre.
 \end{enumerate}
 
-\subsubsection{Convocatòria i sessions dels òrgans col·legiats}
-\subsubsection{Adopció d'acords}
+\subsubsection{Convocatòria i sessions dels òrgans col·legiats}\label{art:convocatories}
+\begin{enumerate}[\thesubsubsection.1]
+	\item La convocatòria a les sessions ordinàries del Ple correspon al president o la presidenta de l'òrgan col·legiat, i es tramet amb una antelació mínima de set dies pels mitjans electrònics admesos per la Universitat, i ha d'especificar el lloc, la data, l'hora i l'ordre del dia de la reunió.
+	\item El delegat de centre és el president del Ple i del Consell de la Delegació.
+	\item La convocatòria ha d'especificar el lloc o l'adreça d'accés als documents que corresponen a l'ordre del dia, que s'han de donar a conèixer set dies abans de la data de la sessió. Excepcionalment, els documents que no es poden difondre amb l'antelació prevista han d'estar a disposició dels membres de l'òrgan col·legiat, en tot cas, el dia hàbil anterior al de la sessió.
+	\item Els òrgans col·legiats també poden reunir-se en sessió extraordinària si hi ha temes d'urgència que ho justifiquin; en aquest cas la iniciativa de la convocatòria correspon al seu president o bé a un 20\% dels membres de l'òrgan.\label{art:extraordinaries}
+	L'ordre del dia d'una reunió extraordinària es reduirà als temes que l'han motivada i es farà públic en convocatòria amb un antelació mínima de dos dies hàbils.
+	\item Perquè la constitució de l'òrgan col·legiat sigui vàlida cal la presència del president i el secretari, o, si s'escau les persones que els substitueixen, i el 30\%, com a mínim, dels membres de l'òrgan col·legiat. Si no hi ha quòrum, l'òrgan col·legiat es constitueix en segona convocatòria i cal que hi assisteixin, com a mínim, un 15\% dels seus membres.\label{art:constitucio}
+	\item Els òrgans col·legiats de la Delegació poden dur a terme les seves funcions de manera no presencial seguint les directrius recollides al Reglament de les sessions a distància dels òrgans col·legiats, Acord del Consell de Govern CG/2020/07/11 i ratificat per la Junta de l'ETSETB.
+\end{enumerate}
+
+\subsubsection{Adopció d'acords}\label{art:acords}
+\begin{enumerate}[\thesubsubsection.1]
+	\item Els acords s'adopten quan el nombre de vots favorables és superior al nombre de vots desfavorables, excepte aquells acords que requereixin majoria qualificada i estiguin explícitament definits en aquest Reglament o en altra normativa que resulti d'aplicació. En cas d'empat, el president de l'òrgan en qüestió pot emetre un vot de qualitat.
+	\item La votació ha de ser secreta sempre que es tracti d'acords que afectin a persones, o bé quan ho sol·licita el president o la presidenta de l'òrgan, o bé el 20\% dels assistents a la sessió.
+\end{enumerate}
 
 \subsection{El Ple}
+\subsubsection{Naturalesa i composició}
+El Ple és l'òrgan superior de representació de la Delegació d'estudiants del centre. Formen part del Ple tots els membres de la Delegació.
+
+El delegat de centre és el president del Ple.
+
+El secretari de la Delegació actuarà com a secretari del Ple i donarà fe dels acords presos.
+
+Al Ple hi poden assistir amb veu però sense vot:
+\begin{enumerate}[a)]
+	\item Qualsevol estudiant de l'ETSETB.
+	\item Qualsevol altra persona convidada per un membre del Ple.
+\end{enumerate}
+
+\subsubsection{Funcions}
+El Ple exerceix les següents funcions:
+\begin{enumerate}[a)]
+	\item Les funcions definides a l'Article \ref{art:funcions} d'aquest Reglament.
+	\item Elegir i cessar el delegat de centre.
+	\item Cessar els sotsdelegats de centre.
+	\item Crear i dissoldre les comissions que consideri oportunes amb les finalitats i atribucions que el mateix Ple decideixi.
+	\item Aprovar el Reglament de funcionament de la Delegació.
+	\item Proposar iniciatives, aspiracions i manifestar la seva opinió sobre problemes que afectin la comunitat universitària.
+\end{enumerate}
+
+\subsubsection{Delegació de funcions}
+El Ple pot delegar a les comissions les seves funcions. Tanmateix, no són delegables:
+\begin{enumerate}[a)]
+	\item L'elecció i el cessament del delegat de centre.
+	\item El cessament dels sotsdelegats de centre.
+	\item L'aprovació del Reglament de la Delegació.
+	\item L'aprovació del Pressupost anual i el tancament de l'exercici anterior
+\end{enumerate}
+
+\subsubsection{Sessions}
+\begin{enumerate}[\thesubsubsection.1]
+	\item El Ple es reuneix en sessió ordinària, com a mínim, una vegada al quadrimestre.
+	\item El Ple es reuneix en sessió extraordinària en els termes regulats a l'Article \ref{art:extraordinaries} d'aquest Reglament.
+\end{enumerate}
+
+\subsubsection{Funcionament}
+S'apliquen l'Article \ref{art:convocatories} i l'Article \ref{art:acords} d'aquest Reglament pelr que fa a la convocatòria i adopció d'acords.
 
 \subsection{El Consell de la Delegació}
+\subsubsection{Naturalesa i funcions}
+El Consell de la Delegació exerceix les següents funcions:
+\begin{enumerate}[a)]
+	\item Aprovar la creació i/o dissolució, quan s'escaigui, de les grups de treball que es considerin convenients.
+	\item Escollir i revocar els membres dels grups de treball creats pel Consell de la Delegació.
+	\item Escollir i revocar els membres de les comissions de l'ETSETB.
+	\item Elaborar una proposta per a la gestió dels recursos econòmics de la Delegació, per a la seva posterior aprovació per part del Ple.
+	\item Assessorar el delegat de centre en les seves funcions.
+	\item Les funcions indicades a l'Article 21 del Reglament de l'ETSETB.
+	\item Proporcionar la informació i assessorament necessari als estudiants que ho requereixin.
+	\item Donar suport a les activitats organitzades per la Delegació.
+	\item Mediar entre els membres del Ple per assegurar-ne la bona convivència.
+\end{enumerate}
+
+\subsubsection{Mandat}
+El mandat del Consell de la Delegació serà el corresponent al del delegat de centre.
+
+\subsubsection{Composició}
+El Consell de la Delegació està format per:
+\begin{enumerate}[a)]
+	\item El delegat de centre, que n'és el president.
+	\item El secretari de la Delegació, que n'és el secretari.
+	\item Els sotsdelegats de centre.
+	\item El tresorer.
+\end{enumerate}
+
+\subsubsection{Sessions}
+\begin{enumerate}[\thesubsubsection.1]
+	\item El Consell de la Delegació es reuneix amb periodicitat mensual.
+	\item El Consell es reuneix en sessió extraordinària en els termes regulats a l'Article \ref{art:extraordinaries} d'aquest Reglament.
+	\item Hi poden assistir, amb veu però sense vot, els estudiants de la UPC que siguin convidats pel delegat de centre.
+\end{enumerate}
+
+\subsubsection{Funcionament}
+\begin{enumerate}[\thesubsubsection.1]
+	\item Pel funcionament del Consell de la Delegació s'apliquen l'Article \ref{art:constitucio} i l'Article \ref{art:acords} d'aquest Reglament.
+	\item No es podrà prendre un acord que correspongui al delegat de centre, al secretari o al tresorer si aquests no han pogut assistir a la sessió.
+\end{enumerate}
 
 \subsection{El delegat de centre}
+\subsubsection{Naturalesa}
+D'acord amb l'Article 99 dels Estatuts de la UPC el delegat de centre de l'Escola exerceix la funció de portaveu de la Delegació i la màxima representació dels estudiants del seu centre.
+
+\subsubsection{Funcions}
+El delegat de centre té les funcions que li assignen els Estatuts de la UPC, i el Reglament d'organització i funcionament de l'Escola.
+
+El delegat de centre també té les següents funcions:
+\begin{enumerate}[a)]
+	\item Vetllar pel compliment d'aquest Reglament i el bon funcionament de la Delegació.
+	\item Nomenar i destituir els sotsdelegats, el secretari i el tresorer.
+	\item Convocar i presidir les reunions del Ple i del Consell de la Delegació.
+	\item Convocar eleccions a delegat de centre.
+\end{enumerate}
+
+\subsubsection{Elecció}
+El Ple de la delegació elegeix el delegat de centre entre els membres que formen part del Ple.
+
+Per a l'elecció del delegat de centre s’aplica el procediment previst per a l'elecció de director de departament, regulat al Capítol 5 del Títol IV del Reglament electoral de la UPC.
+
+\subsubsection{Mandat}
+El mandat és el que designa el Reglament d’organització i funcionament de l'ETSETB en l'Article 37.
+
+\subsubsection{Cessament}
+\begin{enumerate}[\thesubsubsection.1]
+	\item El Ple de la delegació pot cessar el delegat de centre.
+	\item La proposta de cessament l'ha de presentar, com a mínim, un terç dels membres del Ple. La proposta ha d'incloure el calendari electoral d'aplicació.
+	\item L'aprovació del cessament requereix el vot favorable de dos terços dels membres del Ple.
+	\item Si la proposta de cessament no s'aprova, els signataris no en poden presentar una altra fins al cap d'un any.
+	\item Si el Ple n'aprova el cessament, el Ple convoca eleccions de forma immediata i el delegat de centre cessa en les seves funcions.
+\end{enumerate}
+
 
 \subsection{Els sotdelegats de centre}
+\subsubsection{Nomenament i cessament}
+\subsubsection{Funcions}
 
 \subsection{El secretari}
+\subsubsection{Naturalesa i funcions}
 
 \subsection{El tresorer}
+\subsubsection{Naturalesa i funcions}
 
 \section{Aprovació i modificació del Reglament de la Delegació}
+\subsubsection{Titulars de la iniciativa}
+Poden promoure la proposta de modificació d'aquest reglament:
+\begin{enumerate}[a)]
+	\item El delegat de centre de l'ETSETB.
+	\item Un mínim del 30\% dels membres del Ple.
+\end{enumerate}
+
+\subsubsection{Procediment}
+\begin{enumerate}[\thesubsubsection.1]
+	\item La proposta de modificació del reglament de funcionament ha d'anar acompanyada d'un escrit de motivació i ha d'incloure el text de modificació proposat.
+	\item L'aprovació de la proposta de modificació d'aquest reglament requereix un quòrum de participació de dues terceres parts del nombre d'assistents al Ple on s'ha proposat la modificació i el vot favorable, com a mínim, de la meitat més un dels vots vàlids emesos.
+	\item Un cop aprovada la proposta, l'expedient es tramet a la Junta del centre docent perquè l'aprovi, si escau.
+\end{enumerate}
 
 \section*{Disposicions addicionals}
 \addcontentsline{toc}{section}{Disposicions addicionals}
 
 \subsubsection*{Disposició addicional única. Gènere}
 \addcontentsline{toc}{subsection}{Disposició addicional única. Gènere}
-Les referències a persones fetes en aquest reglament o altres documents de la Delegació s’entenen referides a persones de qualsevol identitat de gènere, excepte si s’indica explícitament el contrari.
+Les referències a persones fetes en aquest reglament o altres documents de la Delegació s'entenen referides a persones de qualsevol identitat de gènere, excepte si s'indica explícitament el contrari.
 
 
 \end{document}
